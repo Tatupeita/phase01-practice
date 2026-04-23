@@ -22,7 +22,7 @@ h1 {
 
 .profile {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
 }
 
@@ -38,4 +38,22 @@ h1 {
 
 .intro p:last-child {
   margin-bottom: 0;
+}
+
+.intro button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f6fb8;
+  background-color: #f2f7fa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.intro button:hover {
+  background-color: #ffffff;
+  color: #1f6fb8;
 }

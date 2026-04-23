@@ -40,4 +40,41 @@ Cursor Agent Mode に Plan → Execute → Verify の型で指示を出し、
 - 使用技術: HTML + CSS
 - Agent挙動: Plan復唱 → 承認 → index.html / style.css 自動生成
 - 検証結果: 5点すべてOK
-- 学び: Agentへの指示はPLAN.md参照方式で通る
+- 学び: Agentへの指示はPLAN.md参照方式で通る　
+---
+
+## 周回2 Plan(2026-04-23)
+
+### 構想(たっぺい)
+既存の index.html に Contact ボタンを1つ追加する。
+- 配置: 自己紹介文の少し下、右カラム内
+- 左の画像(200×200)の下端を縦方向で越えない
+- カラー: 白基調
+- 文字サイズ: 自己紹介文より大きい
+- クリックしやすいサイズ感
+
+### 技術仕様(Claude翻訳)
+- 追加要素: button タグ、テキスト「Contact」
+- 配置: .profile 内の3行pタグの直後(右カラム内)
+- .profile に align-items: flex-start を追加(上寄せ)
+- 色: 背景 #F2F7FA / 文字 #1F6FB8 / 枠線なし
+- ホバー時: 背景 #FFFFFF / 文字 #1F6FB8 維持
+- サイズ: padding 12px 28px / font-size 16px / font-weight 600
+- border-radius: 6px
+- cursor: pointer
+- transition: all 0.2s ease
+- ボタンと自己紹介文の間隔: margin-top 20px
+- クリック動作: なし(周回4で追加予定)
+
+### 禁則
+- JavaScript はまだ使わない(周回4で解禁)
+- 外部ライブラリ使わない
+- プレーンな HTML + CSS
+- hair helpman世界観(海×女神×波)の色は使わない
+
+### 検証方法
+- ブラウザで表示 → ボタンが自己紹介文の下に見える
+- 右カラム全体が画像(200px)の下端を越えていない
+- ボタンの文字が自己紹介3行より大きい
+- マウスホバーで背景が純白に変化する
+- ボタンの上にカーソルを置くと指マークに変わる
