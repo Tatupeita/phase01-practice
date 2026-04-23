@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background-color: #1f6fb8;
+  color: #f2f7fa;
+}
+
+.card-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.intro p {
+  margin: 0 0 8px;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
